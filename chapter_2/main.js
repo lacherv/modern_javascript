@@ -1,15 +1,29 @@
 // jshint esversion:6
-let age = 25;
-let year = 2019;
+// strings 
+console.log('hello, world');
 
-console.log(age, year);
+let email = 'john.doe@mail.com';
+console.log(email);
 
-age = 30;
-console.log(age);
+// string concatenation
+let firstName = 'John';
+let lastName = 'Doe';
 
-const points = 100; // Assignment to constant variable
-// points = 45; 
-console.log(points);
+let fullName = firstName + ' ' + lastName;
+console.log(fullName);
 
-var score = 75; // ES5
-console.log(score);
+// getting characters 
+console.log(fullName[2]);
+
+// string length
+console.log(fullName.length);
+
+// string methods
+console.log(fullName.toUpperCase());
+
+let result = fullName.toLowerCase();
+console.log(result, fullName);
+
+let index = email.indexOf('o');
+console.log(index);
+
