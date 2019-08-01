@@ -1,29 +1,23 @@
 // jshint esversion:6
-// strings 
-console.log('hello, world');
+// template strings
+const title = 'Best read of 2019'; 
+const author = 'Mario';
+const likes = 30;
 
-let email = 'john.doe@mail.com';
-console.log(email);
+// concatenation way
+// let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes.'
+// console.log(result);
 
-// string concatenation
-let firstName = 'John';
-let lastName = 'Doe';
+// template string way
+let result = `The blog called ${title} by ${author} has ${likes} likes.`;
+console.log(result);
 
-let fullName = firstName + ' ' + lastName;
-console.log(fullName);
+// creating html templates 
 
-// getting characters 
-console.log(fullName[2]);
+let html = `
+<h2>${title}</h2>
+<p>By ${author}</p>
+<span>This blog has ${likes} likes.</span>
+`;
 
-// string length
-console.log(fullName.length);
-
-// string methods
-console.log(fullName.toUpperCase());
-
-let result = fullName.toLowerCase();
-console.log(result, fullName);
-
-let index = email.indexOf('o');
-console.log(index);
-
+console.log(html);
